@@ -1,7 +1,9 @@
-<img src="https://acl2020.org/assets/images/logos/acl-logo.png" width=10% /> &nbsp;&nbsp; <img src="https://raw.githubusercontent.com/valohai/ml-logos/5127528b5baadb77a6ea4b999a47b4e86bf0f98b/pytorch.svg" width=25% /><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<b>EMNLP2020</b> <br/>
+# Speech Emotion Recognition Example
+Fork From Below Repo 
 
-Pytorch implementation of the paper <b>"Modulated Fusion using Transformer for Linguistic-Acoustic Emotion Recognition"</b><br/>
+**Modulated Fusion using Transformer for Linguistic-Acoustic Emotion Recognition**  
+[[paper]](https://arxiv.org/abs/2010.02057) [[repo]](https://github.com/jbdel/modulated_fusion_transformer)
+
 ```
 @inproceedings{delbrouck-etal-2020-modulated,
     title = "Modulated Fusion using Transformer for Linguistic-Acoustic Emotion Recognition",
@@ -22,18 +24,34 @@ Pytorch implementation of the paper <b>"Modulated Fusion using Transformer for L
 
 #### Environement
 
-Create a 3.6 python environement with:
+This repo fixed version issue in original repo
+
 ```
-torch              1.2.0    
-torchvision        0.4.0   
-numpy              1.18.1    
+python 3.8
+pytorch 1.7
+torchvision 0.8
+spacy 2.3
+```
+Use version 2.3 for spacy v2.3
+```
+wget https://github.com/explosion/spacy-models/releases/download/en_vectors_web_lg-2.3.0/en_vectors_web_lg-2.3.0.tar.gz -O en_vectors_web_lg-2.3.0.tar.gz --no-check-certificate     
+pip install en_vectors_web_lg-2.3.0.tar.gz
 ```
 
-We use GloVe vectors from space. This can be installed to your environement using the following commands :
-```
-wget https://github.com/explosion/spacy-models/releases/download/en_vectors_web_lg-2.1.0/en_vectors_web_lg-2.1.0.tar.gz -O en_vectors_web_lg-2.1.0.tar.gz
-pip install en_vectors_web_lg-2.1.0.tar.gz
-```
+- Original Repo  
+   Create a 3.6 python environement with:
+   ```
+   torch              1.2.0    
+   torchvision        0.4.0   
+   numpy              1.18.1    
+   ```
+    
+   We use GloVe vectors from space. This can be installed to your environement using the following commands :
+   ```
+   wget https://github.com/explosion/spacy-models/releases/download/en_vectors_web_lg-2.1.0/en_vectors_web_lg-2.1.0.tar.gz -O en_vectors_web_lg-2.1.0.tar.gz
+   pip install en_vectors_web_lg-2.1.0.tar.gz
+   ```
+
 #### Data
 
 Create a data folder and get the data:
