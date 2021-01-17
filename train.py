@@ -38,7 +38,7 @@ def train(net, train_loader, eval_loader, args):
             x = x.cuda()
             y = y.cuda()
             z = z.cuda()
-            ans = ans.cuda()
+            ans = ans.type(torch.LongTensor).cuda()
 
             pred = net(x, y, z)
             loss = loss_fn(pred, ans)
